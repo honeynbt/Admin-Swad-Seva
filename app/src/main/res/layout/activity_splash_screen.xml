@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/SwadSevaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swad Seva"
+        android:textColor="@color/orange"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/yeonsungregular"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintEnd_toEndOf="@id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/SwadSevaText"
+        app:layout_constraintStart_toStartOf="@+id/SwadSevaText"
+        app:layout_constraintEnd_toEndOf="@id/SwadSevaText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/yeonsungregular"
+        android:text="Design By\nVats Raj Krishna❤️"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
